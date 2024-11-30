@@ -1,5 +1,7 @@
 package com.petarstoykov.xmlsecureprocessor.services;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,7 @@ import java.io.StringWriter;
 
 @Service
 public class XmlProcessorService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(XmlProcessorService.class);
 
     @Value("${xml.files.path}/books.xml")
     private Resource xmlFile;
@@ -33,7 +36,7 @@ public class XmlProcessorService {
 
             return writer.toString();
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage(), e);
         }
 
         return null;

@@ -1,0 +1,5 @@
+- Do authentication via **JWT**
+- Learn more about **XSLT Transformations**
+- Update **xml file** with better info
+- Check what does the **xsl pattern** do exactly
+- Write Documentation in **[README.md](README.md)**
