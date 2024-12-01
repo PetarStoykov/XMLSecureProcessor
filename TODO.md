@@ -1,5 +1,5 @@
 - [x] Do authentication via **Spring Security**
-- [ ] Do second endpoint for html file download
+- [x] Do second endpoint for html file download
 - [ ] Learn more about **XSLT Transformations**
 - [ ] Update **xml file** with better info
 - [ ] Check what does the **xsl pattern** do exactly
