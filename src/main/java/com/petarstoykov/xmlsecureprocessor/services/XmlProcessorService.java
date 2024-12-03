@@ -23,6 +23,11 @@ public class XmlProcessorService {
     @Value("${xsl.files.path}/books.xsl")
     private Resource xsltFile;
 
+    /**
+     * Transforms the XML file to an HTML string using the specified XSLT file.
+     *
+     * @return the transformed HTML string, or null if an error occurs
+     */
     public String transformXmlToHtml() {
         try {
             Source xslt = new StreamSource(xsltFile.getInputStream());
