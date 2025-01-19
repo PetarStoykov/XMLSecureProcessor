@@ -1,4 +1,4 @@
 # XMLSecureProcessor
-XML processor protected with authentication.
+XML processor protected with authentication and authorization.
 
 ## TODOs - [here](TODO.md)
